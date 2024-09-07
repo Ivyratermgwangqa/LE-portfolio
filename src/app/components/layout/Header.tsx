@@ -1,26 +1,26 @@
-import React from 'react';
-import Link from 'next/link';
+"use client";
+import Link from "next/link";
+import '../../globals.css';
 
-const Header: React.FC = () => {
+
+const Header = () => {
     return (
-        <header className="bg-gray-800 text-white p-4">
+        <header className="bg-gray-900 text-white p-4">
             <div className="container mx-auto flex justify-between items-center">
-                <div className="text-2xl font-bold">
-                    <Link href="/">Lerato&apos;s Portfolio</Link>
-                </div>
+                <h1 className="text-2xl font-bold">Lerato Portfolio</h1>
                 <nav>
                     <ul className="flex space-x-4">
                         <li>
-                            <Link href="/">Home</Link>
+                            <Link href="/" className="hover:text-gray-400">Home</Link>
                         </li>
                         <li>
-                            <Link href="/about">About</Link>
+                            <Link href="/about" className="hover:text-gray-400">About</Link>
                         </li>
                         <li>
-                            <Link href="/projects">Projects</Link>
+                            <Link href="/projects" className="hover:text-gray-400">Projects</Link>
                         </li>
                         <li>
-                            <Link href="/contact">Contact</Link>
+                            <Link href="/contact" className="hover:text-gray-400">Contact</Link>
                         </li>
                     </ul>
                 </nav>
